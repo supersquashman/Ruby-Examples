@@ -1,0 +1,26 @@
+1.)  ~NoLeak ~LowTemp ReactorUnitSafe   {}
+2.)  ~NoLeakH1 ~NoLeakH2 NoLeak   {}
+3.)  ~okH1 NoLeakH1   {}
+4.)  okH1 V1 NoLeakH1   {}
+5.)  ~okH2 NoLeakH2   {}
+6.)  okH2 V2 NoLeakH2   {}
+7.)  ~l ~V1 ~V2 LowTemp   {}
+8.)  l ~V1 LowTemp   {}
+9.)  l ~V2 LowTemp   {}
+10.)  ~l   {}
+11.)  ~okH2   {}
+12.)  okH1   {}
+13.)  V1   {}
+14.)  ~V2   {}
+15.)  ReactorUnitSafe   {}
+16.)  okH2 NoLeakH2   {14,6}
+17.)  okH2 ~NoLeakH1 NoLeak   {16,2}
+18.)  l LowTemp   {13,8}
+19.)  NoLeakH1   {12,3}
+20.)  ~NoLeakH2 NoLeak   {19,2}
+21.)  V2 NoLeakH2   {11,6}
+22.)  V2 ~NoLeakH1 NoLeak   {21,2}
+23.)  ~V1 LowTemp   {10,8}
+24.)  V2 NoLeak   {21,20}
+25.)  true {16,2}
+Valid Solution

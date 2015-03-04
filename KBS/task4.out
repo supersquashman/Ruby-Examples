@@ -1,0 +1,34 @@
+1.)  ~NoLeakH1 ~NoLeakH2 NoLeak ~LowTemp ReactorUnitSafe V1 V2 okH1 okH2 l   {}
+2.)  ~NoLeak ~LowTemp ReactorUnitSafe   {}
+3.)  ~NoLeakH1 ~NoLeakH2 NoLeak   {}
+4.)  ~okH1 NoLeakH1   {}
+5.)  okH1 V1 NoLeakH1   {}
+6.)  ~okH2 NoLeakH2   {}
+7.)  okH2 V2 NoLeakH2   {}
+8.)  ~l ~V1 ~V2 LowTemp   {}
+9.)  l ~V1 LowTemp   {}
+10.)  l ~V2 LowTemp   {}
+11.)  ~l   {}
+12.)  ~okH2   {}
+13.)  okH1   {}
+14.)  V1   {}
+15.)  ~V2   {}
+16.)  ~ReactorUnitSafe   {}
+17.)  ~NoLeak ~LowTemp   {16,2}
+18.)  okH2 NoLeakH2   {15,7}
+19.)  okH2 ~NoLeakH1 NoLeak   {18,3}
+20.)  okH2 ~NoLeakH1 ~LowTemp ReactorUnitSafe   {19,2}
+21.)  l LowTemp   {14,9}
+22.)  l ~NoLeak ReactorUnitSafe   {21,2}
+23.)  l ReactorUnitSafe ~NoLeakH1 ~NoLeakH2   {22,3}
+24.)  NoLeakH1   {13,4}
+25.)  ~NoLeakH2 NoLeak   {24,3}
+26.)  ~NoLeakH2 ~LowTemp ReactorUnitSafe   {25,2}
+27.)  V2 NoLeakH2   {12,7}
+28.)  V2 ~NoLeakH1 NoLeak   {27,3}
+29.)  V2 ~NoLeakH1 ~LowTemp ReactorUnitSafe   {28,2}
+30.)  ~NoLeakH1 ReactorUnitSafe l   {29,10}
+31.)  ~NoLeakH1 ReactorUnitSafe   {30,11}
+32.)  ReactorUnitSafe ~okH1   {31,4}
+33.)  ReactorUnitSafe   {32,13}
+34.)  false {33,16}

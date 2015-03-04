@@ -1,0 +1,20 @@
+1.)  ~NoLeakH1 ~NoLeakH2 NoLeak   {}
+2.)  ~okH1 NoLeakH1   {}
+3.)  okH1 V1 NoLeakH1   {}
+4.)  ~okH2 NoLeakH2   {}
+5.)  okH2 V2 NoLeakH2   {}
+6.)  ~okH2   {}
+7.)  okH1   {}
+8.)  ~V2   {}
+9.)  ~NoLeak   {}
+10.)  ~NoLeakH1 ~NoLeakH2   {9,1}
+11.)  okH2 NoLeakH2   {8,5}
+12.)  okH2 ~NoLeakH1 NoLeak   {11,1}
+13.)  okH2 NoLeak ~okH1   {12,2}
+14.)  okH2 NoLeak   {13,7}
+15.)  NoLeak   {14,6}
+16.)  NoLeakH1   {7,2}
+17.)  V2 NoLeakH2   {6,5}
+18.)  V2 ~NoLeakH1   {17,10}
+19.)  V2   {18,16}
+20.)  false {19,8}
